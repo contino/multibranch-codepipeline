@@ -1,0 +1,13 @@
+# Local .terraform directories
+**/.terraform/*
+.terraform/
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+.serverless
+
+node_modules
+
+.DS_Store
