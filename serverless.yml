@@ -24,6 +24,6 @@ provider:
 
 functions:
   cliEvents :
-    handler: new_branch.new_branch
+    handler: lambda/new_branch.new_branch
   prEvents :
-    handler: new_pullrequest.lambda_handler
+    handler: lambda/new_pullrequest.lambda_handler
