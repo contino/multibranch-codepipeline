@@ -6,7 +6,7 @@
 
 AWS CodePipeline supports only a single branch on any given pipeline. This is a major problem for developers and users who are used to popular CI tools. Several developers online have suggested and created workarounds but nothing really seemed straight-forward to me. I saw a stackoverflow post with less than three upvotes suggesting the approach I have taken and decided to implement it. The implementation itself has been quite challenging due to weird quirks with CodeCommit which have been described in detail below. I am yet to add CodeBuild configuration and setup stages.
 
-## Challenges with CodeCommit
+## Challenges with CodeCommit (big oofs)
 
 ### CodeCommit cannot trigger targets if the events occur through the AWS console/CLI (may get fixed at some point)
 
@@ -34,5 +34,8 @@ AWS Console --> Cloudwatch rule --> SNS topic --> Lambda function
 
 Clearly this is not the most straight-forward setup but once you set this up, you can enjoy the luxurious pipeline features that come out of the box with popular CI tools. Moreover, this setup is completely configurable by modifying the lambda functions which is kinda cool and makes you feel extra nerdy I guess.
 
+## Architecture
+
+![architecture](/docs/images/architecture.png)
 
 
