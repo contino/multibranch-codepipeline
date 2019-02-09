@@ -4,7 +4,7 @@
 
 ## Current capability
 
-Currently this project is capable of taking a previously created reference pipeline in CodePipeline and clone it. The clone will point to the new branch/pipeline. I intend to make this as clean as possible store the configuration of the reference pipeline in code and never have to use a reference pipeline that serves no purpose except serving as a config source.
+Currently this project is capable of taking a previously created reference pipeline in CodePipeline and clone it. The clone will point to the new branch/pipeline. I intend to make this as clean as possible and store the configuration of the reference pipeline in code and never have to use a reference pipeline that serves no purpose except serving as a config source.
 
 ## Motivation
 
