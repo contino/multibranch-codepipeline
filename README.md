@@ -2,6 +2,10 @@
 
 ![why u no](/docs/images/whyuno.jpg)
 
+## Current capability
+
+Currently this project is capable of taking a previously created reference pipeline in CodePipeline and clone it. The clone will point to the new branch/pipeline. I intend to make this as clean as possible store the configuration of the reference pipeline in code and never have to use a reference pipeline that serves no purpose except serving as a config source.
+
 ## Motivation
 
 AWS CodePipeline supports only a single branch on any given pipeline. This is a major problem for developers and users who are used to popular CI tools. Several developers online have suggested and created workarounds but nothing really seemed straight-forward to me. I saw a stackoverflow post with less than three upvotes suggesting the approach I have taken and decided to implement it. The implementation itself has been quite challenging due to weird quirks with CodeCommit which have been described in detail below. I am yet to add CodeBuild configuration and setup stages.
